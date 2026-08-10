@@ -1,1 +1,142 @@
-site_name: My Docs
+site_name: PARAM SHAVAK 2.0 User Manual
+site_description: User and Administrator Manual for PARAM SHAVAK 2.0
+site_author: C-DAC
+
+theme:
+  name: material
+
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - toc.follow
+
+  logo: image/cdac-logo.png
+  extra_css:
+  - stylesheet/extra.css
+
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+
+extra:
+  generator: false
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+  - pymdownx.highlight:
+      anchor_linenums: true
+
+  - pymdownx.tabbed:
+      alternate_style: true
+
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+  - attr_list
+  - md_in_html
+  - tables
+
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+
+nav:
+
+  - Home:
+      - Introduction: index.md
+      - Key feature: keyfeature.md
+  - System Overview:
+      - System Overview: overview/system-overview.md
+      - System Requirements and Variants: overview/system-requirements.md
+      - Architecture: overview/architecture.md
+  - Getting Started:
+      - Prerequisites: getting-started/prerequisites.md
+
+
+  - HPC:
+      - HPC Overview: hpc/overview.md
+      - Cluster Architecture: hpc/cluster-architecture.md
+      - SLURM: hpc/slurm.md
+      - User Management: hpc/user-management.md
+      - Job Submission: hpc/job-submission.md
+      - Job Monitoring: hpc/job-monitoring.md
+      - Resource Management: hpc/resource-management.md
+
+  - Applications:
+      - Application Overview: applications/overview.md
+      - Installed Applications: applications/application-list.md
+      - Molecular Dynamics: applications/domains/molecular-dynamics.md
+      - Computational Fluid Dynamics: applications/domains/cfd.md
+      - Machine Learning: applications/domains/machine-learning.md
+      - Deep Learning: applications/domains/deep-learning.md
+
+
+  - Administration:
+      - Administrator Overview: administration/overview.md
+      - User Creation: administration/user-creation.md
+      - User Management: administration/user-management.md
+      - Account Closure: administration/account-closure.md
+      - Service Management: administration/service-management.md
+      - Log Management: administration/log-management.md
+
+  - Monitoring:
+      - Monitoring Overview: monitoring/overview.md
+      - System Health Check: monitoring/health-check.md
+      - CPU Monitoring: monitoring/cpu-monitoring.md
+      - Memory Monitoring: monitoring/memory-monitoring.md
+      - GPU Monitoring: monitoring/gpu-monitoring.md
+      - Storage Monitoring: monitoring/storage-monitoring.md
+      - Network Monitoring: monitoring/network-monitoring.md
+
+  - Resource Management:
+      - Resource Management Overview: resource-management/overview.md
+      - CPU Resources: resource-management/cpu.md
+      - GPU Resources: resource-management/gpu.md
+      - Memory Resources: resource-management/memory.md
+      - Storage Resources: resource-management/storage.md
+      - Workload Management: resource-management/workload-management.md
+
+  - Troubleshooting:
+      - Troubleshooting Overview: troubleshooting/overview.md
+      - Boot Issues: troubleshooting/boot-issues.md
+      - Operating System Issues: troubleshooting/os-issues.md
+      - Network Issues: troubleshooting/network-issues.md
+      - Storage Issues: troubleshooting/storage-issues.md
+      - GPU Issues: troubleshooting/gpu-issues.md
+      - Application Issues: troubleshooting/application-issues.md
+      - HPC / SLURM Issues: troubleshooting/hpc-slurm-issues.md
+
+
+
+  - Reference:
+      - Important Facts: reference/important-facts.md
+      - Important Commands: reference/commands.md
+      - Configuration Files: reference/configuration-files.md
+      - Network Ports: reference/network-ports.md
+      - Environment Variables: reference/environment-variables.md
+      - References: reference/references.md
+      - Acknowledgements: reference/acknowledgements.md
+
+  - Help and Support:
+      - Help: support/help.md
+      - FAQ: support/faq.md
+      - Support: support/support.md
