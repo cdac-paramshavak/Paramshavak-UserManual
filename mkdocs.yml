@@ -16,8 +16,6 @@ theme:
     - toc.follow
 
   logo: image/cdac-logo.png
-  extra_css:
-  - stylesheet/extra.css
 
   palette:
     - media: "(prefers-color-scheme: light)"
@@ -64,66 +62,44 @@ nav:
   - Home:
       - Introduction: index.md
       - Key feature: keyfeature.md
+
   - System Overview:
       - System Overview: overview/system-overview.md
       - System Requirements and Variants: overview/system-requirements.md
       - Architecture: overview/architecture.md
-  - Getting Started:
-      - Prerequisites: getting-started/prerequisites.md
+
+  - Unboxing And Startup Guide:
+      - Uboxing : Guide/unbox.md
+      - Port Guide : Guide/port.md
+      - Power up : Guide/powerup.md
 
 
-  - HPC:
-      - HPC Overview: hpc/overview.md
-      - Cluster Architecture: hpc/cluster-architecture.md
-      - SLURM: hpc/slurm.md
-      - User Management: hpc/user-management.md
-      - Job Submission: hpc/job-submission.md
-      - Job Monitoring: hpc/job-monitoring.md
-      - Resource Management: hpc/resource-management.md
-
-  - Applications:
-      - Application Overview: applications/overview.md
-      - Installed Applications: applications/application-list.md
-      - Molecular Dynamics: applications/domains/molecular-dynamics.md
-      - Computational Fluid Dynamics: applications/domains/cfd.md
-      - Machine Learning: applications/domains/machine-learning.md
-      - Deep Learning: applications/domains/deep-learning.md
-
+  - Operating System :
+      - HPC Overview: OS/overview.md
+      - User Interface : OS/interface.md
 
   - Administration:
-      - Administrator Overview: administration/overview.md
-      - User Creation: administration/user-creation.md
-      - User Management: administration/user-management.md
-      - Account Closure: administration/account-closure.md
-      - Service Management: administration/service-management.md
-      - Log Management: administration/log-management.md
+      - Basic System Check: Admin/system_check.md
+      - User Creaton: Admin/user-creation.md
+      - User Management: Admin/user-management.md
 
-  - Monitoring:
-      - Monitoring Overview: monitoring/overview.md
-      - System Health Check: monitoring/health-check.md
-      - CPU Monitoring: monitoring/cpu-monitoring.md
-      - Memory Monitoring: monitoring/memory-monitoring.md
-      - GPU Monitoring: monitoring/gpu-monitoring.md
-      - Storage Monitoring: monitoring/storage-monitoring.md
-      - Network Monitoring: monitoring/network-monitoring.md
 
-  - Resource Management:
-      - Resource Management Overview: resource-management/overview.md
-      - CPU Resources: resource-management/cpu.md
-      - GPU Resources: resource-management/gpu.md
-      - Memory Resources: resource-management/memory.md
-      - Storage Resources: resource-management/storage.md
-      - Workload Management: resource-management/workload-management.md
+  - Basic Commands and HPC Applications:
 
-  - Troubleshooting:
-      - Troubleshooting Overview: troubleshooting/overview.md
-      - Boot Issues: troubleshooting/boot-issues.md
-      - Operating System Issues: troubleshooting/os-issues.md
-      - Network Issues: troubleshooting/network-issues.md
-      - Storage Issues: troubleshooting/storage-issues.md
-      - GPU Issues: troubleshooting/gpu-issues.md
-      - Application Issues: troubleshooting/application-issues.md
-      - HPC / SLURM Issues: troubleshooting/hpc-slurm-issues.md
+      - Application Overview: applications/overview.md
+      - Installed Applications: applications/application-list.md
+      - Basic Linux Commands : application/commands.md
+      - Slurm : application/slurm.md
+      - HPC GUI : application/hpcgui.md
+
+
+  - Remote Login:
+      - Windows: Login/windows.md
+      - Linux : Login/Linux.md
+      - Android : Login/android.md
+      
+
+ 
 
 
 
