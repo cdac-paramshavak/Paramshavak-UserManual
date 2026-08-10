@@ -73,46 +73,30 @@ nav:
       - Port Guide : Guide/port.md
       - Power up : Guide/powerup.md
 
-
   - Operating System :
-      - HPC Overview: OS/overview.md
-      - User Interface : OS/interface.md
+      - HPC Overview: OS/Overview.md
+      - User Interface : OS/Interface.md
 
   - Administration:
       - Basic System Check: Admin/system_check.md
       - User Creaton: Admin/user-creation.md
       - User Management: Admin/user-management.md
 
-
   - Basic Commands and HPC Applications:
-
       - Application Overview: applications/overview.md
       - Installed Applications: applications/application-list.md
-      - Basic Linux Commands : application/commands.md
-      - Slurm : application/slurm.md
-      - HPC GUI : application/hpcgui.md
-
+      - Basic Linux Commands : applications/commands.md
+      - Slurm : applications/slurm.md
+      - HPC GUI : applications/hpcgui.md
 
   - Remote Login:
       - Windows: Login/windows.md
       - Linux : Login/Linux.md
       - Android : Login/android.md
-      
 
- 
-
-
-
-  - Reference:
-      - Important Facts: reference/important-facts.md
-      - Important Commands: reference/commands.md
-      - Configuration Files: reference/configuration-files.md
-      - Network Ports: reference/network-ports.md
-      - Environment Variables: reference/environment-variables.md
-      - References: reference/references.md
-      - Acknowledgements: reference/acknowledgements.md
+  - Reference:  
+      - Important Facts: reference.md
 
   - Help and Support:
       - Help: support/help.md
-      - FAQ: support/faq.md
       - Support: support/support.md
