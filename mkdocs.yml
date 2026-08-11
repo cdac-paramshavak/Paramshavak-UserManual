@@ -81,7 +81,8 @@ nav:
       - Basic System Check: Admin/system_check.md
       - User Creaton Cli: Admin/user-creation-cli.md
       - User Creaton Gui: Admin/user-creation-gui.md
-      - User Management: Admin/user-management.md
+      - User Management Cli: Admin/user-management-cli.md
+      - User Management Gui: Admin/user-management-gui.md
 
   - Basic Commands and HPC Applications:
       - Installed Applications: applications/application-list.md
