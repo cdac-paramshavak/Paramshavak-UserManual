@@ -83,7 +83,6 @@ nav:
       - User Management: Admin/user-management.md
 
   - Basic Commands and HPC Applications:
-      - Application Overview: applications/overview.md
       - Installed Applications: applications/application-list.md
       - Basic Linux Commands : applications/commands.md
       - Slurm : applications/slurm.md
