@@ -91,9 +91,7 @@ nav:
       - HPC GUI : applications/hpcgui.md
 
   - Remote Login:
-      - Windows: Login/windows.md
-      - Linux : Login/Linux.md
-      - Android : Login/android.md
+      - Remote Access : Login/Linux.md
 
   - Reference:  
       - Important Facts: reference.md
