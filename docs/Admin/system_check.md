@@ -98,8 +98,7 @@ lsblk -f
 5. Check the reported device sizes.
 
 **Screenshot:**
-
-> `[Insert Screenshot – lsblk Output]`
+![](../image/sys-ck-dsk.png)
 
 ### Expected Result
 
