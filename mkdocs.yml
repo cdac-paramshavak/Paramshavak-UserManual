@@ -65,18 +65,14 @@ nav:
 
   - System Overview:
       - System Overview: overview/system-overview.md
-      - System Requirements and Variants: overview/system-requirements.md
-      - Architecture: overview/architecture.md
+      
 
   - Unboxing And Startup Guide:
       - Uboxing : Guide/unbox.md
       - Port Guide : Guide/port.md
       - Power up : Guide/powerup.md
 
-  - Operating System :
-      - HPC Overview: OS/Overview.md
-      - User Interface : OS/Interface.md
-
+  
   - Administration:
       - Basic System Check: Admin/system_check.md
       - User Creaton Cli: Admin/user-creation-cli.md

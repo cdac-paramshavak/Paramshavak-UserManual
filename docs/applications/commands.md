@@ -2,29 +2,35 @@
 
 This chapter provides information on additional Linux commands that can be used for PARAM Shavak
 
+!!! warning  "Do not use this command until or unless you are sure what you are doing."
+
 
 ## The uptime Command
 In Linux, the uptime command shows how long the system is running and the number of users that are currently logged in. It also displays load average for 1, 5 and 15 minutes intervals.
 
- ```uptime``` 
+ ```bash 
+ uptime 
 
- ``13:39:21 up 5 days,  2:17,  3 users,  load average: 0.01, 0.01, 0.00``
+ 13:39:21 up 5 days,  2:17,  3 users,  load average: 0.01, 0.01, 0.00
+ 
+ ```
 
 
 ## The w Command
 The w command displays users currently logged in and their process along-with shows load averages. It also shows the login name, tty name, remote host, login time, idle time, JCPU, PCPU, command and processes.
 
- ```#w```
+```bash
+ w
 
- ```13:38:57 up 5 days,  2:17,  3 users,  load average: 0.01, 0.01, 0.00``
+ 13:38:57 up 5 days,  2:17,  3 users,  load average: 0.01, 0.01, 0.00
 
-```USER     TTY        LOGIN@   IDLE   JCPU   PCPU WHAT```
+ USER     TTY        LOGIN@   IDLE   JCPU   PCPU WHAT```
 
-```admin    seat0     Thu11    0.00s  0.00s  0.00s /usr/libexec/gdm-wayland-session``` ```--register-session gnome-session```
+ admin    seat0     Thu11    0.00s  0.00s  0.00s /usr/libexec gdm-wayland-session-register-session gnome-session
 
-``` admin    tty2      Thu11    5days  0.02s  0.02s /usr/libexec/gnome-session-binary```
+ admin    tty2      Thu11    5days  0.02s  0.02s /usr/libexec/gnome-session-binary
 
-``` root     pts/1     13:38    1.00s  0.01s  0.01s w```
+ root     pts/1     13:38    1.00s  0.01s  0.01s 
 
 Following is a list of available options:
 
@@ -32,25 +38,29 @@ Following is a list of available options:
 -s: Without JCPU and PCPU.
 -f: Removes from field.
 -V: (upper letter) – Shows versions.
+```
 
+ 
 
 ## The users Command
 The users command displays currently logged in users. This command does not have parameters other than help and version.
 
-``` # users ```
+```
+ # users 
 
-```admin admin root```
+admin admin root
+```
 
 ## The who Command
 The who command simply returns user name, date, time and host information. The who command is similar to w command. Unlike w, the who command does not print what users are doing. Let’s illustrate and see the difference between who and w commands.
 
-``#who`` 
+```bash
+who 
 
-``admin    seat0        2026-08-06 11:24 (login screen)``
+admin    seat0        2026-08-06 11:24 (login screen)
+admin    tty2         2026-08-06 11:24 (tty2)
 
-``admin    tty2         2026-08-06 11:24 (tty2)``
-
-``root     pts/1        2026-08-11 13:38 (10.208.55.129)``
+root     pts/1        2026-08-11 13:38 (10.208.55.129)
 
 Following is a list of the who command Options:
 
@@ -58,13 +68,18 @@ Following is a list of the who command Options:
 -r: Shows current runlet.
 -a, –all: Displays all information cumulatively.
 
-
+```
 ## The whoami Command
 The whoami command prints the name of the current user. You can also use the whoami command to display the current user. If you are logged in as a root using the sudo command, the whoami command returns root as current user. Use the whoami command if you want to know the exact user logged in.
 
-``# whoami ``
 
-``admin``
+```bash
+
+ # whoami 
+
+admin
+
+```
 
 
 
@@ -72,38 +87,44 @@ The whoami command prints the name of the current user. You can also use the who
 ## The cp Command
 The cp command copies file from source to destination preserving same mode.
 
-``` cp -p fileA fileB ```
+
+```bash
+cp -p fileA fileB 
 
 You will be prompted before overwriting any file.
 
-``` cp -i fileA fileB ```
+ cp -i fileA fileB 
 
 ## The mv Command
 Rename fileA to fileB. The -i option prompts before overwrite. Asks for confirmation if exist already.
 
-``` mv -i fileA fileB ```
+mv -i fileA fileB 
 
 ## The cat Command
 The cat command used to view multiple file at the same time.
 
-``` cat fileA fileB ```
-
+cat fileA fileB 
+```
 
 
 ## The rm command
 The rm command is used to remove or delete a file without prompting for confirmation.
-``` rm filename  ```
+rm filename  
 
 Use the -i option to get confirmation before removing it. Using the options -r and -f
 removes the file forcefully without confirmation.
 
 
-Note: Do not use this command until or unless you are sure what you are doing.
 
-``` rm -i test.txt ```
+
+```bash
+
+rm -i test.txt
 
 
 rm: remove regular file `test.txt'?	
+ 
+```
 
 
 ## The mkdir command
@@ -256,6 +277,3 @@ Ctrl+W – erases one word in the current line
 Ctrl+U – erases the whole line
 
 Ctrl+R – type to bring up a recent command
-
-!! - repeats the last command
-

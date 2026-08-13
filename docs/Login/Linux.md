@@ -207,7 +207,7 @@ Download and install Visual Studio Code from the official
 ```text
 Ctrl + Shift + P
 
-```ssh username@server-ip
+ssh username@server-ip
 ```
 
 ## MobaXterm
@@ -234,24 +234,35 @@ Download MobaXterm from the official [MobaXterm website](https://mobaxterm.mobat
 
 Install or run the appropriate version according to your organization's software policy.
 
+
+
 #### Create an SSH Session
 
-1. Launch **MobaXterm**.
-2. Click **Session** from the top menu.
-3. Select **SSH**.
-4. Enter the PARAM SHAVAK server hostname or IP address.
-5. Specify the SSH port.
-6. Enter the PARAM SHAVAK username.
-7. Click **OK**.
-8. Enter the password when prompted.
+* Launch **MobaXterm**.
+<img src="/image/Moba-01.png" alt="alt">
+<p style="text-align: center;">Figure - MobaXterm Interface select New Session Or Local terminal </p>
 
-Use the following connection settings:
 
-| Setting | Value |
-|---|---|
-| **Remote host** | PARAM SHAVAK server hostname or IP address |
-| **Port** | `22` |
-| **Username** | PARAM SHAVAK username |
+* Click **Session** from the top menu.
+* Select **SSH**.
+* Enter the PARAM SHAVAK server hostname or IP address.
+* Specify the SSH port.
+
+
+<img src="/image/Moba-02.png" alt="alt">
+<p style="text-align: center;">Figure - MobaXterm New Session,proceed with terminal.</p>
+
+* Enter the PARAM SHAVAK username.
+* Click **OK**.
+* Enter the password when prompted.
+
+
+
+Can also Use Local terminal directly for the connection :
+
+<img src="/image/Moba-03.png" alt="alt">
+<p style="text-align: center;">Figure -MobaXterm Terminal SSH connect.</p>
+
 
 #### SSH Connection
 
