@@ -16,6 +16,7 @@ theme:
     - toc.follow
 
   logo: image/cdac-logo.png
+  favicon: image/param-shavak-logo.png
 
   palette:
     - media: "(prefers-color-scheme: light)"
