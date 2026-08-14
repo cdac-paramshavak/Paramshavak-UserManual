@@ -16,11 +16,11 @@ To cater to different user needs, PARAM Shavak 2.0 is available in multiple vari
 - PARAM Shavak ML/DL
 - PARAM Shavak SHRISHTI
 
-## PARAM Shavak HPC System Specifications
+## PARAM Shavak  System Specifications
 
-Following section provides technical details about the PARAM Shavak HPCvariant 
+Following section provides technical details about the PARAM Shavak  System.
 
-     Technical Specifications - PSAIOS-A800
+     Technical Specifications
 
 <table>
   <thead>
@@ -54,7 +54,7 @@ Following section provides technical details about the PARAM Shavak HPCvariant
     </tr>
     <tr>
       <td><strong>Accelerator</strong></td>
-      <td>1 × NVIDIA A30 / A800 / MI 210 for Computation</td>
+      <td>1 × NVIDIA A30 / A800 / RTX 4500 / RTX 5000</td>
     </tr>
     <tr>
       <td><strong>HDD</strong></td>
@@ -134,7 +134,7 @@ Following section provides technical details about the PARAM Shavak HPCvariant
       <td>2 × 15&nbsp;TB NVMe/SATA SSD with Hardware RAID controller – supports RAID 0, 1, 5</td>
     </tr>
     <tr>
-      <td><strong>OS Certified</strong></td>
+      <td><strong>Operating System</strong></td>
       <td>C-DAC PS-BOSS OS</td>
     </tr>
     <tr>

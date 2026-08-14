@@ -1,5 +1,6 @@
 # Unboxing the All-in-One Server from the Wooden Crate
 
+!!!tip "Unboxing Video Attached "
 ## Overview
 
 The all-in-one server is securely packed inside a wooden crate for protection during transportation. The crate is designed to be opened from the **top**, and the upper protective foam contains dedicated compartments for the keyboard and mouse.

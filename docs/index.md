@@ -11,6 +11,8 @@ In India, the **Centre for Development of Advanced Computing (C-DAC)** has been 
 
 # PARAM SHAVAK 2.0
 
+![](../image/SHAVAK01.png)
+
 ## Overview
 
 **PARAM SHAVAK 2.0** is the next-generation version of PARAM SHAVAK, developed by C-DAC as a compact, low-cost, and energy-efficient HPC solution.
