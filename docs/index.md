@@ -11,7 +11,9 @@ In India, the **Centre for Development of Advanced Computing (C-DAC)** has been 
 
 # PARAM SHAVAK 2.0
 
-![](../image/SHAVAK01.png)
+
+<img src="/image/SHAVAK01.png" alt="alt">
+<p style="text-align: center;">Figure - PARAM SHAVAK .</p> 
 
 ## Overview
 
