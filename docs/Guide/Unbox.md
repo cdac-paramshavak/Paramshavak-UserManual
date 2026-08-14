@@ -188,8 +188,7 @@ Look for:
 - Missing accessories
 
 !!! warning "Report Any Damage"  
-If any damage is found on the server, monitor, accessories, or cables, do not power on the system. Document the damage with photographs and notify the responsible administrator or supplier.
-
+If any damage is found on the server, monitor, accessories, or cables, please report to support@axlworld.com , do not power on the system. 
 ### 9. Verify the Accessories
 
 Compare the contents of the shipment with the supplied packing list.

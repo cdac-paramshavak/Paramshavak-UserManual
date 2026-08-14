@@ -3,25 +3,16 @@
 # Support  Person Incharge :
 
 
-AXL 
+AXL :
 
-| Name of the contact person AXL   | Designation | Mail ID |
-|---|---|---|
-| **Ms Pooja Chauhan** | RMA support Executive | support@axlworld.com |
-| **Mr Ashok Kumar** | Admin | ashok@axlworld.com |
+| Name of the contact person AXL | Designation           | Mail ID              |
+| ------------------------------ | --------------------- | -------------------- |
+| **Ms Pooja Chauhan**           | RMA support Executive | support@axlworld.com |
+| **Mr Ashok Kumar**             | Admin                 | ashok@axlworld.com   |
 
-
-VVDN
-
-| Name of the contact person AXL   | Designation | Mail ID |
-|---|---|---|
-| **Ms Pooja Chauhan** | RMA support Executive | support@axlworld.com |
-| **Mr Ashok Kumar** | Admin | ashok@axlworld.com |
 
 
 CDAC
 
-| Name of the contact person AXL   | Designation | Mail ID |
-|---|---|---|
-| **Ms Pooja Chauhan** | RMA support Executive | support@axlworld.com |
-| **Mr Ashok Kumar** | Admin | ashok@axlworld.com |
+Mail ID :
+[param-shavak2.0@cdac.in](mailto:param-shavak2.0@cdac.in)
