@@ -209,4 +209,6 @@ Verify that all required items are present, including:
 !!! tip "Video Reference"  
 For a complete visual demonstration of the unboxing procedure, **watch the video below for the full step-by-step unboxing process**. The video demonstrates the correct method for opening the wooden crate, removing the protective packaging, and safely taking out the all-in-one server system while protecting the attached monitor.
 
-
+<video controls width="100%">
+    <source src="../../image/unbx-vid1.mp4" type="video/mp4">
+</video>
