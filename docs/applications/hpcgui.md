@@ -28,7 +28,7 @@ WRF, OpenFOAM, NWChem, CP2K, HMMER, MUMmer, HPL, Quantum-ESPRESSO, and more).
 
 ---
 
-<img src="../image/hpcgui01.png" alt="alt">
+<img src="../../image/hpcgui01.png" alt="alt">
 <p style="text-align: center;">Figure - CDAC HPC-GUI Interface .</p> 
 
 
@@ -45,7 +45,7 @@ Each application page displays:
 - Two selection panels: **Select Version** and **Select Interface**
 
 ---
-<img src="../image/hpcgui02.png" alt="alt">
+<img src="../../image/hpcgui02.png" alt="alt">
 <p style="text-align: center;">Figure - Selected Lammps.</p>  
 
 
@@ -63,7 +63,7 @@ different compiler/toolchain builds).
 
 ---
 
-<img src="../image/hpcgui03.png" alt="alt">
+<img src="../../image/hpcgui03.png" alt="alt">
 <p style="text-align: center;">Figure - Available Multiple version .</p>  
 
 
@@ -80,7 +80,7 @@ Click **Use GUI** to continue with the form-based workflow.
 
 ---
 
-<img src="../image/hpcgui04.png" alt="alt">
+<img src="../../image/hpcgui04.png" alt="alt">
 <p style="text-align: center;">Figure - Select the GUI - Terminal Interface </p>
 
 ## 5. Configure the Job (Form Interface)
@@ -98,7 +98,7 @@ Once the required fields are filled in, the GUI automatically generates a valid
 
 ---
 
-<img src="../image/hpcgui06.png" alt="alt">
+<img src="../../image/hpcgui06.png" alt="alt">
 <p style="text-align: center;">Figure - GUI Interfeace Add Parameters And Input Files </p>
 
 ## 6. Preview and Edit the SBATCH Script
@@ -116,7 +116,7 @@ Before submission, the GUI displays a **Preview** of the auto-generated SBATCH s
 
 ---
 
-<img src="../image/hpcgui07.png" alt="alt">
+<img src="../../image/hpcgui07.png" alt="alt">
 <p style="text-align: center;">Figure - Check the preview and edit if required  and save.</p>
 
 ## 7. Submit the Job
@@ -129,7 +129,7 @@ Once satisfied with the script:
 ---
 
 
-<img src="../image/hpcgui08.png" alt="alt">
+<img src="../../image/hpcgui08.png" alt="alt">
 <p style="text-align: center;">Figure - Select output folder path and the Submit  </p>
 
 ## 8. Monitor Job Status
@@ -143,7 +143,7 @@ The status indicator will show one of the following:
 
 ---
 
-<img src="../image/hpcgui09.png" alt="alt">
+<img src="../../image/hpcgui09.png" alt="alt">
 <p style="text-align: center;">Figure - JobID displayed and status can be verified </p>
 
 ## 9. View Output and Error Files
@@ -157,7 +157,7 @@ Once the job finishes, two buttons become available:
 ---
 
 
-<img src="../image/hpcgui10.png" alt="alt">
+<img src="../../image/hpcgui10.png" alt="alt">
 <p style="text-align: center;">Figure - Ouput File  </p>
 
 
@@ -172,14 +172,14 @@ For applications that support visualization (e.g. molecular dynamics or CFD tool
 ---
 
 
-<img src="../image/hpcgui11.png" alt="alt">
+<img src="../../image/hpcgui11.png" alt="alt">
 <p style="text-align: center;">Figure - Visualisation tool </p>
 
 ## 11. Visualize Results
 
 3. The built-in visualization tool launches and renders the output for analysis directly
 
-<img src="../image/hpcgui12.png" alt="alt">
+<img src="../../image/hpcgui12.png" alt="alt">
 <p style="text-align: center;">Figure - Rendered Visualization Result </p>
 
 
