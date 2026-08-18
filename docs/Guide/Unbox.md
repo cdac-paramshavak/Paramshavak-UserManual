@@ -211,5 +211,5 @@ For a complete visual demonstration of the unboxing procedure, **watch the video
 
 
 <video controls width="100%"> 
-<source src="/image/unbx-vid.mp4" type="video/mp4"> 
+<source src="../image/unbx-vid.mp4" type="video/mp4"> 
 </video>
