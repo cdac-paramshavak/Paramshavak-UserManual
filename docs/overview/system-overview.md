@@ -86,12 +86,17 @@ Following section provides technical details about the PARAM Shavak  System.
     </tr>
   </tbody>
 </table>
-
+ter
 
 
 
 
 ## PARAM Shavak 2.0 HPC Software Stack
+
+![](../image/Softwarestack.png)
+
+
+
 
 
 ## PARAM Shavak 2.0 ML/DL System Specifications
