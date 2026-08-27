@@ -172,14 +172,14 @@ For applications that support visualization (e.g. molecular dynamics or CFD tool
 ---
 
 
-<img src="/image/hpcgui11.png" alt="alt">
+<img src="../../image/hpcgui11.png" alt="alt">
 <p style="text-align: center;">Figure - Visualisation tool </p>
 
 ## 11. Visualize Results
 
 3. The built-in visualization tool launches and renders the output for analysis directly
 
-<img src="/image/hpcgui12.png" alt="alt">
+<img src="../../image/hpcgui12.png" alt="alt">
 <p style="text-align: center;">Figure - Rendered Visualization Result </p>
 
 
