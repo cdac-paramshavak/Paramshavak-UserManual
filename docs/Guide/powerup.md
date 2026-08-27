@@ -74,15 +74,15 @@ During the host boot process:
 
 Allow the boot process to complete without interrupting power to the server.
 
-### image 1
+### BIOS
 
 ![](../image/pn-img5.jpg)
 
-### image 2
+### Grub Menu
 
 ![](../image/pn-img6.jpg)
 
-### image 3
+### Login screen
 
 ![](../image/pn-img7.jpg)
 
