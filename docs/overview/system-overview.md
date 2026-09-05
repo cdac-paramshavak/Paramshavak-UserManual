@@ -171,6 +171,7 @@ ter
 
 ## PARAM Shavak 2.0 ML/DL  Software Stack
 
+![](../image/MLSoftwarestack.png)
 
 ## PARAM Shavak 2.0 SHRISHTI  Specifications
 <table>
@@ -211,7 +212,7 @@ ter
     </tr>
     <tr>
       <td><strong>OS Certified</strong></td>
-      <td>C-DAC BOSS OS</td>
+      <td> CDAC PARAM SHAVAK BOSS OS </td>
     </tr>
     <tr>
       <td><strong>Power Supply</strong></td>
@@ -227,7 +228,7 @@ ter
     </tr>
     <tr>
       <td><strong>Display Card</strong></td>
-      <td>Nvidia Tesla P1000</td>
+      <td>Nvidia A400</td>
     </tr>
     <tr>
       <td><strong>Monitor</strong></td>

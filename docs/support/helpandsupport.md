@@ -9,7 +9,9 @@ AXL :
 | ------------------------------ | --------------------- | -------------------- |
 | **Ms Pooja Chauhan**           | RMA support Executive | support@axlworld.com |
 | **Mr Ashok Kumar**             | Admin                 | ashok@axlworld.com   |
-
+| **Mr Prateek Jain**            | IT Manager            | prateek.j@axlworld.com |
+| **Ms Sunaina**                 | CRM                   | crm12@axlworld.com   |
+ 
 
 
 CDAC
