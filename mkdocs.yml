@@ -91,8 +91,8 @@ nav:
   - Remote Login:
       - Remote Access : Login/Linux.md
 
-  - Reference:  
-      - Important Facts: reference.md
+#  - Reference:  
+  #    - Important Facts: reference.md
 
   - Help and Support:
       - Support : support/helpandsupport.md

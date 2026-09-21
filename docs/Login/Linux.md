@@ -239,7 +239,7 @@ Install or run the appropriate version according to your organization's software
 #### Create an SSH Session
 
 * Launch **MobaXterm**.
-<img src="/image/Moba-01.png" alt="alt">
+<img src="/image\Moba-01.png" alt="alt">
 <p style="text-align: center;">Figure - MobaXterm Interface select New Session Or Local terminal </p>
 
 

@@ -241,4 +241,3 @@ ter
 
 
 
-## PARAM Shavak 2.0 SHRISHTI Software Stack
