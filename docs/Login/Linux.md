@@ -239,7 +239,8 @@ Install or run the appropriate version according to your organization's software
 #### Create an SSH Session
 
 * Launch **MobaXterm**.
-<img src="/image\Moba-01.png" alt="alt">
+![](../image/Moba-01.png)
+
 <p style="text-align: center;">Figure - MobaXterm Interface select New Session Or Local terminal </p>
 
 
@@ -248,8 +249,8 @@ Install or run the appropriate version according to your organization's software
 * Enter the PARAM SHAVAK server hostname or IP address.
 * Specify the SSH port.
 
+![](../image/Moba-02.png)
 
-<img src="/image/Moba-02.png" alt="alt">
 <p style="text-align: center;">Figure - MobaXterm New Session,proceed with terminal.</p>
 
 * Enter the PARAM SHAVAK username.
@@ -260,7 +261,8 @@ Install or run the appropriate version according to your organization's software
 
 Can also Use Local terminal directly for the connection :
 
-<img src="/image/Moba-03.png" alt="alt">
+![](../image/Moba-03.png)
+
 <p style="text-align: center;">Figure -MobaXterm Terminal SSH connect.</p>
 
 
