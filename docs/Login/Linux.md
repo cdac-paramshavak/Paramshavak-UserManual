@@ -116,8 +116,8 @@ Enter the following information:
 | **Connection Type** | `SSH` |
 
 
+![](../image/putty01.jpg)
 
-<img src="/image/putty01.jpg" alt="alt">
 
 <p style="text-align: center;">Figure - PuTTY Configuration Dialog Box</p>
 
@@ -154,8 +154,8 @@ Press **Enter**.
 Enter the password associated with your PARAM SHAVAK account and press **Enter**.
 
 ```
+![](../image/putty02.jpg)
 
-<img src="/image/putty02.jpg" alt="alt">
 <p style="text-align: center;">Figure - PuTTY Terminal Window</p>
 
 
