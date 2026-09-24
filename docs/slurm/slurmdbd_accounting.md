@@ -81,7 +81,7 @@ ls -l /etc/slurm/slurmdbd.conf
 ## Output :
 ## -rw------- 1 root root 208 Jan 2 12:03 /etc/slurm/slurmdbd.conf
 
-sudo vi /etc/slurm/slurmdbd.conf
+
 
 ````
 
@@ -90,6 +90,9 @@ Then Configuration File /etc/slurm/slurmdbd.conf should contain something like:
 **Command:**
 
 ````bash 
+sudo vi /etc/slurm/slurmdbd.conf
+#
+
 AuthType=auth/munge
 DbdHost=localhost
 
