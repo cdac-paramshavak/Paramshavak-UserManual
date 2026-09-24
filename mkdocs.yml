@@ -85,8 +85,14 @@ nav:
   - Basic Commands and HPC Applications:
       - Installed Applications: applications/application-list.md
       - Basic Linux Commands : applications/commands.md
-      - Slurm : applications/slurm.md
       - HPC GUI : applications/hpcgui.md
+      
+  - Slurm :
+      - Slurm  : slurm/slurm.md
+      - Slurm Commands : slurm/slurm_commands.md
+      - Slurmdbd And Accounting : slurm/slurmdbd_accounting.md
+
+      
 
   - Remote Login:
       - Remote Access : Login/Linux.md

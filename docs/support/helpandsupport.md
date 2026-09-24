@@ -3,7 +3,7 @@
 # Support  Person Incharge :
 
 
-AXL :
+AXL  Hardware Repair :
 
 | Name of the contact person AXL | Designation           | Mail ID              |
 | ------------------------------ | --------------------- | -------------------- |
