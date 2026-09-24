@@ -28,18 +28,6 @@ The submitted script commonly contains one or more `srun` commands for launching
 sbatch
 ````
 
-## `sbcast`
-
-`sbcast` transfers a file from the local disk of the submitting system to the local disks of the compute nodes allocated to a job.
-
-This can be useful for diskless environments or when transferring frequently accessed files locally can provide better performance than accessing them through a shared filesystem.
-
-**Command:**
-
-````bash
-sbcast
-````
-
 ## `scancel`
 
 `scancel` cancels a pending or running job or job step.
@@ -82,17 +70,6 @@ It can be used to view node availability, partition status, node states, and res
 sinfo
 ````
 
-## `sprio`
-
-`sprio` displays detailed information about the factors that contribute to a job's scheduling priority.
-
-It is particularly useful for understanding why one pending job may be scheduled before another.
-
-**Command:**
-
-````bash
-sprio
-````
 
 ## `squeue`
 
@@ -141,23 +118,6 @@ It can be used to monitor resource consumption such as CPU and memory usage whil
 sstat
 ````
 
-## `strigger`
-
-`strigger` is used to configure and monitor Slurm event triggers.
-
-Triggers can be configured for events such as:
-
-* A compute node changing state
-* A node becoming unavailable
-* A job approaching its time limit
-* Other Slurm state changes
-
-**Command:**
-
-````bash
-strigger
-````
-
 ## `sview`
 
 `sview` provides a graphical user interface for viewing and, where permitted, modifying Slurm cluster state.
@@ -177,15 +137,6 @@ sview
 ````
 
 
-## `sacct`
-
-`sacct` displays accounting information for jobs and job steps. It can be used to view information about both active and completed jobs, including resource usage and job status.
-
-**Command:**
-
-````bash
-sacct
-````
 
 ## `salloc`
 
@@ -212,6 +163,182 @@ sattach
 ````
 
 Slurm provides a comprehensive workload management and scheduling framework for HPC clusters, enabling users and administrators to efficiently manage compute resources, submit and monitor jobs, and control cluster workloads.
+
+
+##Slurmdbd Setup:
+
+This guide walks you to a working Slurm accounting database, then shows how to create accounts and users and give them priorities with sacctmgr.
+
+
+| Component |  Function |
+|-----------|------------|
+| `slurmctld` | The Slurm controller (the "brain") that schedules jobs. |
+| `slurmd` | The daemon running on each compute node that executes jobs. |
+| `slurmdbd` | The Slurm Database Daemon — the middleman that stores accounting data. |
+| `MariaDB` | The SQL database where `slurmdbd` stores accounting information. |
+| `munge` | Authentication service that allows Slurm daemons to trust each other. |
+| `sacctmgr` | Command used to manage clusters, accounts, users, and QOS in the database. |
+| `sacct` / `sshare` / `sprio` | Commands used to view job history, fair-share usage, and job priority. |
+
+
+Install and prepare MariaDB
+
+
+**Installation and starting the Database service :**
+
+````bash
+
+sudo dnf install -y mariadb-server mariadb
+sudo systemctl enable --now mariadb
+systemctl status mariadb
+
+````
+
+enable --now starts it immediately and on every reboot.
+
+Create the database and user
+
+!!! warning "The database name created should be added to the slurmdbd.conf file. Follows in the below steps"  
+
+**Creating New Database For the slurm accounting :**
+
+````bash
+sudo mariadb
+
+
+CREATE DATABASE IF NOT EXISTS slurm_acct_db;
+CREATE USER IF NOT EXISTS 'slurm'@'localhost' IDENTIFIED BY 'Slurm_Acct_Db_2026x9Kq';
+GRANT ALL PRIVILEGES ON slurm_acct_db.* TO 'slurm'@'localhost';
+FLUSH PRIVILEGES;
+
+````
+
+
+**Verify the database creation :**
+
+````bash
+SHOW DATABASES;
+SHOW GRANTS FOR 'slurm'@'localhost';
+EXIT;
+````
+
+You should see slurm_acct_db in the list.
+
+Query to setup the password for the Database :
+
+ALTER USER 'slurm'@'localhost' IDENTIFIED BY 'NewPasswordHere';
+
+!!! warning "Do not create tables (job_table, user_table, ...) yourself. slurmdbd builds the whole schema automatically on first start."  
+
+
+
+
+Setup Slurmdbd : 
+
+
+**Command:**
+
+````bash
+
+sudo dnf install -y slurm-slurmdbd
+
+sudo chmod 600 /etc/slurm/slurmdbd.conf
+
+ls -l /etc/slurm/slurmdbd.conf
+## Output :
+## -rw------- 1 root root 208 Jan 2 12:03 /etc/slurm/slurmdbd.conf
+
+sudo vi /etc/slurm/slurmdbd.conf
+
+````
+
+Then Configuration File /etc/slurm/slurmdbd.conf should contain something like:
+
+**Command:**
+
+````bash 
+AuthType=auth/munge
+DbdHost=localhost
+
+PidFile=/var/run/slurm/slurmdbd.pid
+
+SlurmUser=root
+
+StorageType=accounting_storage/mysql
+StorageHost=localhost
+StoragePort=3306
+StorageUser=slurm
+StoragePass=slurm@123
+StorageLoc=slurm_acct_db # name the created database
+````
+
+
+
+**Enable few parameters in slurm.conf:**
+
+````bash 
+ # Replace/uncomment the lines in the configuration files
+sudo vi /etc/slurm/slurmdbd.conf
+
+ # Replace/uncomment the lines 
+
+
+# JOB PRIORITY
+PriorityWeightQOS=1000
+
+# LOGGING AND ACCOUNTING
+AccountingStorageType=accounting_storage/slurmdbd
+
+JobAcctGatherType=jobacct_gather/linux
+````
+
+
+
+**Start slurmdbd:**
+
+````bash 
+sudo systemctl enable --now slurmdbd
+
+systemctl restart slurmdbd
+# restart the service 
+systemctl status slurmdbd
+
+````
+
+Once the service is in Running state  Check the Tables are created :
+
+**Command:**
+
+````bash 
+sudo mariadb -e "USE slurm_acct_db; SHOW TABLES;"
+
+````
+Slurmdbd Accounting Setup Done !
+
+
+
+## `sacctmgr`
+
+**Command:**
+
+````bash
+sacctmgr
+````
+
+
+
+## `sacct`
+
+`sacct` displays accounting information for jobs and job steps. It can be used to view information about both active and completed jobs, including resource usage and job status.
+
+**Command:**
+
+````bash
+sacct
+````
+
+
+
 
 For detailed information about Slurm commands, configuration, scheduling, job management, and administration, refer to the official Slurm documentation:
 
