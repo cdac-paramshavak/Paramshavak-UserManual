@@ -1,5 +1,5 @@
 # PARAM SHAVAK 2.0 User Manual
-hello
+
 ## Introduction
 
 
